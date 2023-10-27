@@ -39,7 +39,7 @@ def entropia(X, base=2):
         H += np.log(P[val]) * P[val]
     return -H/np.log(base)
  
- def conjunta(C, X, Y, base=2):
+def conjunta(C, X, Y, base=2):
     """
     Calcula la entropía conjunta de C tomando
     los símbolos en X e Y
@@ -66,7 +66,7 @@ def entropia(X, base=2):
         H += 0 if P[val] == 0 else np.log(P[val])*P[val]
     return -H/np.log(base)
  
- def mi(S,k, base, M=None):
+def mi(S,k, base, M=None):
     """
     Calcula la información mutua de la secuencia S con un 
     corrimiento k.
